@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>一个自我介绍</title>
+</head>
+<link rel="stylesheet" href="moviestyle.css">
+
+
+
+<body>
+<div class="animated-background"></div>
+
+<div>
+    <h class="topic">我 的 个 人 主 页 —— 电 影</h>
+<div>
+<div class="menu">
+        <nav>    
+			<a href="index.html" class="hrefs">&nbsp;&nbsp;&nbsp;首页&nbsp;&nbsp;&nbsp;</a>
+            <a href="hobby.html" class="hrefs">&nbsp;&nbsp;我的爱好&nbsp;&nbsp;</a>
+            <a href="movie.html" class="hrefs">&nbsp;&nbsp;电影&nbsp;&nbsp;</a>
+			<a href="hope.html" class="hrefs">对未来的期望</a>
+            <a href="clickcounter.html" class="hrefs">点击计数器</a>
+			<a href="EastEleven311.html" class="hrefs">返回寝室页面</a>
+        </nav>
+</div>
+
+<div class="container">
+	<div class="image">
+         <img src="../image/剧照.jpg" alt="乱世佳人剧照">
+    </div>
+	
+	<div class="text">
+        <p class="vice_title">乱世佳人</p>
+        <p class="intro">导演: 维克多·弗莱明、乔治·库克、山姆·伍德<br>编剧: 玛格丽特·米切尔、西德尼·霍华德 等<br>主演: 费雯·丽、克拉克·盖博等</p>
+		<p class="intro">类型: 剧情 爱情 历史 战争<br>制片国家: 美国<br>上映日期: 1939-12-15(美国)<br>片长: 233分钟</p>
+		<button onclick="showMore1()">内容简介</button>
+
+		<div id="more-info1" style="display: none;">
+          <h2 >
+            <li class="intro1">《乱世佳人》中，斯嘉丽爱着艾希利，忽视了瑞德的深情。南北战争爆发，斯嘉丽历经磨难，顽强生存。战后，她发现瑞德才是真爱，但瑞德因失望而离去。</li>
+          </h2>
+		</div>
+
+    </div>
+	
+
+
+</div>
+
+
+
+<script>
+    function showMore1() {
+      const moreInfo1 = document.getElementById('more-info1'),moreInfo2 = document.getElementById('more-info2'),moreInfo3 = document.getElementById('more-info3');
+      if (moreInfo1.style.display === 'none') {
+        moreInfo1.style.display = 'block';
+      } else {
+        moreInfo1.style.display = 'none';
+      }
+    }
+</script>
+
+
+</body>
+</html>
