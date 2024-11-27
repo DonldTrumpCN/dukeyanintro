@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>一个自我介绍</title>
+</head>
+<link rel="stylesheet" href="clickcounterstyle.css">
+
+
+
+<body>
+<div class="animated-background"></div>
+
+<div>
+    <h class="topic">我 的 个 人 主 页 —— 点击计数器</h>
+<div>
+<div class="menu">
+        <nav>    
+			<a href="index.html" class="hrefs">&nbsp;&nbsp;&nbsp;首页&nbsp;&nbsp;&nbsp;</a>
+            <a href="hobby.html" class="hrefs">&nbsp;&nbsp;我的爱好&nbsp;&nbsp;</a>
+            <a href="movie.html" class="hrefs">&nbsp;&nbsp;电影&nbsp;&nbsp;</a>
+			<a href="hope.html" class="hrefs">对未来的期望</a>
+            <a href="clickcounter.html" class="hrefs">点击计数器</a>
+			<a href="EastEleven311.html" class="hrefs">返回寝室页面</a>
+        </nav>
+</div>
+
+<div class="container">
+    <p style="font-size: 45px">点击次数：<span id="count">0</span></p>
+
+</div>
+<div class="container1">
+    <button id="incrementButton">点击我</button>
+    <button id="resetButton">重置</button>
+</div>
+
+<script>
+const countDisplay = document.getElementById('count');
+const incrementButton = document.getElementById('incrementButton');
+const resetButton = document.getElementById('resetButton');
+
+let count = 0;
+
+incrementButton.addEventListener('click', function() {
+    count++;
+    countDisplay.textContent = count;
+});
+
+resetButton.addEventListener('click', function() {
+    count = 0;
+    countDisplay.textContent = count;
+});
+</script>
+
+
+</body>
+</html>
