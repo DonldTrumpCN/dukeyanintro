@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>一个自我介绍</title>
+</head>
+<link rel="stylesheet" href="indexstyle.css">
+
+
+
+<body>
+<div class="animated-background"></div>
+
+<div>
+    <h class="topic">我 的 个 人 主 页 —— 首 页</h>
+<div>
+<div class="menu">
+        <nav>    
+			<a href="index.html" class="hrefs">&nbsp;&nbsp;&nbsp;首页&nbsp;&nbsp;&nbsp;</a>
+            <a href="hobby.html" class="hrefs">&nbsp;&nbsp;我的爱好&nbsp;&nbsp;</a>
+            <a href="movie.html" class="hrefs">&nbsp;&nbsp;电影&nbsp;&nbsp;</a>
+			<a href="hope.html" class="hrefs">对未来的期望</a>
+            <a href="clickcounter.html" class="hrefs">点击计数器</a>
+			<a href="EastEleven311.html" class="hrefs">返回寝室页面</a>
+        </nav>
+</div>
+
+<div class="container">
+	<div class="text">
+        <p class="vice_title">&nbsp;杜柯言</p>
+        <p class="intro">&nbsp;&nbsp;湖北宜昌人<br>&nbsp;&nbsp;生于2006年10月03日<br>&nbsp;&nbsp;目前就读于华中科技大学计算机科学与技术学院，来自2407班</p>
+		<button onclick="showMore1()">联系方式</button>
+		
+		<div id="more-info1" style="display: none;">
+          <h2 ><ul>
+            <li class="intro1">QQ：120066033</li>
+		    <li class="intro1">邮箱：120066033@qq.com</li>
+          </ul></h2>
+		</div>
+
+    </div>
+	
+	<div class="image">
+         <img src="../image/个人照片.jpg" alt="我的照片">
+    </div>
+
+</div>
+
+
+
+<script>
+    function showMore1() {
+      const moreInfo1 = document.getElementById('more-info1'),moreInfo2 = document.getElementById('more-info2'),moreInfo3 = document.getElementById('more-info3');
+      if (moreInfo1.style.display === 'none') {
+        moreInfo1.style.display = 'block';
+      } else {
+        moreInfo1.style.display = 'none';
+      }
+    }
+</script>
+
+
+</body>
+</html>
